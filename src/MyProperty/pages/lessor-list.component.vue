@@ -26,7 +26,7 @@
                      responsiveLayout="scroll">
         <template #header>
           <div class="table-header flex flex-column md:flex-row md:justify-content-between">
-            <h5 class="mb-2 md:m-0 p-as-md-center text-xl">Manage Properties</h5>
+            <h5 class="mb-2 md:m-0 p-as-md-center text-xl">Manage lessor</h5>
             <span class="p-input-icon-left">
               <i class="pi pi-search"></i>
               <pv-input-text v-model="filters['global'].value" placeholder="Search..."></pv-input-text>
@@ -35,9 +35,9 @@
         </template>
         <pv-column selectionMode="multiple" style="width: 3rem" :exportable="false"></pv-column>
         <pv-column field="id" header="Id" :sortable="true" style="min-width: 12rem"></pv-column>
-        <pv-column field="title" header="Property" :sortable="true" style="min-width: 16rem"></pv-column>
-        <pv-column field="description" header="Description" :sortable="true" style="min-width: 16rem"></pv-column>
-        <pv-column field="status" header="Status" :sortable="true" style="min-width: 12rem">
+        <pv-column field="title" header="Lessor" :sortable="true" style="min-width: 16rem"></pv-column>
+        <pv-column field="description" header="Properties" :sortable="true" style="min-width: 16rem"></pv-column>
+        <pv-column field="status" header="Availability" :sortable="true" style="min-width: 12rem">
           <template #body="slotProps">
             <pv-tag v-if="slotProps.data.status === 'Published'" severity="success">{{ slotProps.data.status }}</pv-tag>
             <pv-tag v-else severity="info">{{ slotProps.data.status }}</pv-tag>
@@ -56,7 +56,7 @@
       <pv-dialog
           v-model:visible="tutorialDialog"
           :style="{ width: '450px'}"
-          header="Property Information"
+          header="Lessor Information"
           :modal="true"
           class="p-fluid">
         <div class="field mt-3">
@@ -66,7 +66,7 @@
                            required="true"
                            autofocus
                            :class="{'p-invalid': submitted && !tutorial.title}"/>
-            <label for="title">Property</label>
+            <label for="title">Lessor</label>
             <small class="p-error" v-if="submitted && !tutorial.title">
               Title is required
             </small>
@@ -173,8 +173,8 @@ export default {
       filters: {},
       submitted: false,
       statuses: [
-        {label: 'ocupado', value: 'ocupado'},
-        {label: 'desocupado', value: 'desocupado'}
+        {label: 'not available\n', value: 'not available\n'},
+        {label: 'available', value: 'available'}
       ],
       tutorialsService: null
     };

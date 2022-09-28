@@ -34,8 +34,7 @@
         drawer: false,
         items: [
           { label: 'Home', to: '/home' },
-         // { label: 'About', to: '/about' },
-          { label: 'Property', to: '/tutorials' },
+          { label: 'Lessor', to: '/tutorials' },
         ]
       }
     }

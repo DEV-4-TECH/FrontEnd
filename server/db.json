@@ -2,72 +2,14 @@
   "tutorials": [
     {
       "id": 1,
-      "title": "The Vue Tutorial",
-      "description": "The best tips and tutorials for Vue.",
-      "published": false
+      "title": "Juan",
+      "description": " 2 casas",
+      "published": true
     },
     {
       "id": 2,
-      "title": "Amazing Microsoft .NET",
-      "description": "Weekly tutorials about .NET and ASP.NET Core.",
-      "published": false
-    },
-    {
-      "id": 3,
-      "title": "JavaScript for all",
-      "description": "Tips and tricks about JavaScript from scratch.",
-      "published": true
-    },
-    {
-      "id": 4,
-      "title": "Vue Unleashed",
-      "description": "Vue at its best.",
-      "published": true
-    },
-    {
-      "id": 5,
-      "title": "PrimeVue Tutorials",
-      "description": "The best tutorials about PrimeVue",
-      "published": false
-    },
-    {
-      "id": 6,
-      "title": "VueRouter to the Limit",
-      "description": "Amazing tutorials about In-App Navigation",
-      "published": false
-    },
-    {
-      "id": 7,
-      "title": "h",
-      "description": "h",
-      "published": true,
-      "apiId": "v1"
-    },
-    {
-      "id": 8,
-      "title": "jkl",
-      "description": "jkl",
-      "published": false,
-      "apiId": "v1"
-    },
-    {
-      "id": 9,
-      "title": "CASA DE 2 PISOS",
-      "description": "DASVEFSFESEF",
-      "published": true,
-      "apiId": "v1"
-    },
-    {
-      "id": 10,
-      "title": "Casa",
-      "description": "4 habitaciones",
-      "published": true,
-      "apiId": "v1"
-    },
-    {
-      "id": 11,
-      "title": "f",
-      "description": "f",
+      "title": "marcelo",
+      "description": "1 departamento",
       "published": false,
       "apiId": "v1"
     }
