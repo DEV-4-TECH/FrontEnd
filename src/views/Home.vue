@@ -1,9 +1,6 @@
 <template>
     <div id="align">
-        <b-jumbotron id="fundo">
-            <h1 class="text-uppercase">to-do list</h1>
-            <p>made by <a href="https://github.com/Rdemora2">Roberto Moraes</a></p>
-        </b-jumbotron>
+
     </div>
 </template>
 
@@ -21,7 +18,7 @@ export default {
 }
 
 #fundo h1{
-    color: #FEEDE1;
+    color: #2e242d;
     font-weight: 700 !important;
     font-size: 11rem !important;
 }
